@@ -10,7 +10,7 @@ void select_sort(float arr[], int length) {
     pos_min = i;
 
     for (int j = i + 1; j < length; j++) {
-      if (arr[j] < arr[pos_min]) pos_min = j;
+      if (arr[j] > arr[pos_min]) pos_min = j;
     }
 
     if (pos_min != i) {
